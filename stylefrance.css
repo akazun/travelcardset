@@ -1,0 +1,235 @@
+@font-face {
+    font-family: "Davis";
+    src: url("Davis/Davis-Regular.ttf") format("ttf");
+}
+@font-face {
+    font-family: "NKabel";
+    src: url("Neue\ Kabel\ W01\ Bold.woff.ttf") format("ttf"),
+    url("Neue\ Kabel\ W01\ Bold.woff.ttf") format("woff");
+}
+html {
+    min-height: 100vh;
+   
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 400;
+    background-color: #e58aa1;
+  
+ 
+}
+
+body, html {
+    height: 60%;
+    margin: 0;
+    font-family: davis;
+  }
+  
+  /* Style tab links */
+  .tablink {
+    background-color: #9f5064;
+    color: white;
+   float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 550px 16px;
+    font-size: 17px;
+    font-family: NKabel, sans-serif;
+    width: 25%;
+    text-align: top;
+  }
+  .tablink2 {
+    background-color: #c0657c;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 400px 16px;
+    font-size: 17px;
+    font-family: NKabel, sans-serif;
+    width: 23%;
+    margin-block-end: 50px;
+  }
+  .tablink3 {
+    background-color: #d4738c;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 50px 16px;
+    font-size: 17px;
+    font-family: NKabel, sans-serif;
+    width: 25%;
+  }
+  .tablink4 {
+    background-color: #e58aa1;
+    color: white;
+    float: top;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 30.5px 16px;
+    font-size: 17px;
+    font-family: NKabel, sans-serif;
+    width: 25%;
+  }
+  .tablink:hover {
+    background-color: #7a99ca;
+  }
+  .tablink2:hover {
+    background-color: rgb(245, 234, 234);
+  }
+  .tablink3:hover {
+    background-color: rgb(206, 84, 84);
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 20px;
+    height: 10%;
+  }
+  
+  
+
+  
+
+
+
+
+
+.page-title {
+    color: #9f5064;
+    font-family: Davis, serif;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    margin-block-end: 50px;
+    font-size: 15em;
+    font-variant-caps: all-petite-caps;
+    font-style: bold;
+    
+   
+
+
+}
+.game-info-container{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+    perspective: 500px;
+    
+}
+.game-info {
+    font-family: NKabel, sans-serif;
+    color: #9F5164;
+    font-size: 4em;
+}
+.j{
+
+    width: 480px;
+    height: 675px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    padding-top: -30px;
+    
+
+   
+}
+.j:hover {
+    
+}
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+    perspective: 500px;
+}
+.card{
+    position: relative;
+    background-color: #d8899d;
+    height: 449px;
+    width: 329px;
+}
+
+.card-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: transform 500ms ease-in-out;
+}
+.card-front {
+    transform: rotateY(180deg);
+}
+.card:hover .card-back{
+    transform: rotateY(-180deg);
+}
+.card:hover .card-front {
+    transform: rotateY(0);
+}
+
+.card-value{
+    transform: scale(.9)
+}
+.card-front:hover.card-value {
+    transform: scale(1);
+}
+.france-pass{
+    height: 449px;
+    width: 329px;
+    align-self: flex-start;
+    transition: transform 100ms ease-in-out;
+}
+.H{
+    height: 449px;
+    width: 329px;
+    align-self: flex-start;
+    transition: transform 100ms ease-in-out;
+}
+.card:hover .card-back{
+    transform: hover;
+}
+
+.card:hover .card-front{
+    transform: hover;
+}
+
+@media (max-width: 600px) {
+    .game-container{
+        grid-template-columns: repeat(2,auto);
+    }
+    .game-info-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+footer {
+    text-align: center;
+    padding: 100px;
+    background-color: #d8899d;
+    color: white;
+    font-family: NKabel, sans-serif;
+  }
+  
