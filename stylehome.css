@@ -167,7 +167,7 @@ footer {
     font-family: NKabel, sans-serif;
   }
 
-@media only screen and (max-width: 1239px){
+@media only screen and (min-width: 768px){
     .game-info-container{
     grid-column: 1/-1;
     display: flex;
