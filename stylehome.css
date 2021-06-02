@@ -167,19 +167,4 @@ footer {
     font-family: NKabel, sans-serif;
   }
 
-@media only screen and (min-width: 768px){
-    .game-info-container{
-    grid-column: 1/-1;
-    display: flex;
-    justify-content: space-between;
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    grid-gap: 10px;
-    margin: 50px;
-    justify-content: center;
-    perspective: 500px;
-    
-}
-    
-}
   
